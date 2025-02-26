@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /admin
+Disallow: /private
+
+# Host
+Host: https://sje-preview.vercel.app/
+
+# Sitemaps
+Sitemap: https://sje-preview.vercel.app/sitemap.xml

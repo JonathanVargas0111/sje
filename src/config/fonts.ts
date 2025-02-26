@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Montserrat_Alternates } from "next/font/google";
+import { Bodoni_Moda, Geist, Geist_Mono, } from "next/font/google";
 
 export const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -10,7 +10,8 @@ export const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
-export const titleFont  = Montserrat_Alternates({
+export const titleFont  = Bodoni_Moda({
     subsets: ["latin"],
-    weight: ['500', '700'],
+    weight: ['400', '700'],
 });
+

@@ -11,28 +11,30 @@ export default function Home() {
   const home = legalServicesData.home;
 
   return (
-    <main className="flex flex-col items-center row-start-2 gap-8 sm:items-start">
-      <HomeSection
-        title={home.title}
-        description={home.description}
-        callToAction={home.callToAction}
-      />
+    <>
+      <main className="flex flex-col items-center row-start-2 gap-8 sm:items-start">
+        <HomeSection
+          title={home.title}
+          description={home.description}
+          callToAction={home.callToAction}
+        />
 
-      <AboutSection
-        title={aboutData.title}
-        description={aboutData.description}
-        values={aboutData.values}
-      />
+        <AboutSection
+          title={aboutData.title}
+          description={aboutData.description}
+          values={aboutData.values}
+        />
 
-      <ServicesSection
-        title="Nuestros Servicios"
-        services={service}
-      />
+        <ServicesSection
+          title="Nuestros Servicios"
+          services={service}
+        />
 
-      <ContactSection
-        title="Contáctanos"
-      />
+        <ContactSection
+          title="Contáctanos"
+        />
 
-    </main>
+      </main>
+    </>
   );
 }
