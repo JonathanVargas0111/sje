@@ -2,7 +2,6 @@ import AboutSection from "@/components/section/AboutSection";
 import ContactSection from "@/components/section/ContactSection";
 import HomeSection from "@/components/section/HomeSection ";
 import ServicesSection from "@/components/section/ServicesSection";
-import ContactForm from "@/components/ui/contact-form";
 
 import { legalServicesData } from "@/data/legalServicesData";
 

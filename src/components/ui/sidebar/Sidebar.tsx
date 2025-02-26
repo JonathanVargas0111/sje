@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import { IoCloseOutline, IoSearchOutline } from "react-icons/io5";
+import { IoCloseOutline } from "react-icons/io5";
 import { useUIStore } from "@/store";
 import clsx from "clsx";
 import { menuItems } from "@/data/menuItems";

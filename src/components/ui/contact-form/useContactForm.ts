@@ -13,7 +13,16 @@ export const useContactForm = () => {
         validationSchema: contactValidationSchema,
         onSubmit: async (values, { setSubmitting, resetForm }) => {
             try {
-                const response = await fetch(process.env.NEXT_PUBLIC_GET_FORM_URL, {
+
+
+                const formUrl = process.env.NEXT_PUBLIC_GET_FORM_URL;
+
+                if (!formUrl) {
+                    toast.error("Error: La URL del formulario no está configurada.");
+                    setSubmitting(false);
+                    return;
+                }
+                const response = await fetch(formUrl, {
                     method: "POST",
                     body: JSON.stringify(values),
                     headers: {

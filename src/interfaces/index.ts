@@ -1,1 +1,1 @@
-export * from './menu.interface.ts'
+export * from './menu.interface'
